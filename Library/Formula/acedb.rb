@@ -1,15 +1,15 @@
 require 'formula'
 
 class Acedb <Formula
-  url 'ftp://ftp.sanger.ac.uk/pub2/wormbase/data/acedb-4.9.54.tar.bz2'
+  url 'ftp://ftp.sanger.ac.uk/pub2/wormbase/data/acedb-4.9.54.1.tar.bz2'
   homepage 'http://www.acedb.org'
-  md5 '3b977163ac76b4f5e1e0c1718c45c8fe'
+  md5 'b0bd8aded1d42ae4fcd0069c96b9167b'
 
   depends_on 'gtk+'
 
   def install
     
-    #custome compile environments to build on Darwin
+    #custom compile environments to build on Darwin
     ENV['ACEDB']=prefix
     ENV['ACEDB_MACHINE']='DARWIN_4'
 
