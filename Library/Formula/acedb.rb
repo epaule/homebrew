@@ -1,9 +1,9 @@
 require 'formula'
 
 class Acedb <Formula
-  url 'ftp://ftp.sanger.ac.uk/pub2/wormbase/data/acedb-4.9.56.1.tar.bz2'
+  url 'ftp://ftp.sanger.ac.uk/pub2/wormbase/data/acedb-4.9.56.2.tar.bz2'
   homepage 'http://www.acedb.org'
-  md5 '36ae146a7e353ed59bd023c80a39b5c9'
+  md5 '9ce9c2f5487632460ea6fe9dff678d83'
 
   depends_on 'gtk+'
   depends_on 'libiconv' # hmm .... ???
