@@ -13,14 +13,14 @@ class Acedb <Formula
     
     #custom compile environments to build on Darwin
     ENV['ACEDB']=prefix
-    ENV['ACEDB_MACHINE']='DARWIN_MACPORTS_64'
+    ENV['ACEDB_MACHINE']='DARWIN_MACPORTS'
 
 
     chmod_R 0755, 'wmake'
     chmod 0755, 'makefile'
 
     # gtk+ path is dependent on homebrew
-    inreplace 'wmake/DARWIN_MACPORTS_64_DEF' do |s|
+    inreplace 'wmake/DARWIN_MACPORTS_DEF' do |s|
       s.change_make_var! 'LOCAL_LIBS',HOMEBREW_PREFIX
     end
 
