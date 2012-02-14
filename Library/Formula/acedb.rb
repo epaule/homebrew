@@ -5,6 +5,7 @@ class Acedb <Formula
   homepage 'http://www.acedb.org'
   md5 '9ce9c2f5487632460ea6fe9dff678d83'
 
+  depends_on 'xz' # hack untilgdk depends on it instead
   depends_on 'gtk+'
   depends_on 'libiconv' # hmm .... ???
   depends_on 'readline' # somehow defaults to libedit
